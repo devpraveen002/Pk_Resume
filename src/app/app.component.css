@@ -1,0 +1,144 @@
+#banner {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+}
+
+.container {
+     color: var(--primary-color);
+     margin-bottom: 7vh;
+}
+
+#contact {
+     display: flex;
+     display: -webkit-flexbox;
+     justify-content: center;
+     align-items: center;
+}
+
+.section {
+     display: flex;
+     display: -webkit-flexbox;
+     align-items: center;
+     justify-content: center;
+     font-size: 2vh;
+}
+
+#title {
+     overflow: hidden;
+     font-size: 10px;
+}
+
+.typewriter {
+     overflow: hidden;
+     border-right: .25em solid var(--secondary-color);
+     white-space: nowrap;
+     margin: 0 auto;
+     letter-spacing: .20em;
+     animation: typing 3.5s steps(25, end), blink-caret .85s infinite, erasing 2s steps(25, end) 7s forwards;
+}
+
+#subtitle {
+     text-align: left;
+     font-size: 2.5vh;
+     width: 36vh;
+     color: var(--secondary-color);
+}
+
+#contact_sub_container {
+     width: 100%;
+     max-width: 800px;
+     gap: 1vh;
+     display: flex;
+     display: -webkit-flexbox;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+#logo {
+     flex-grow: 1;
+     font-size: 1.8vh;
+     max-width: 23vh;
+}
+
+.computer_screen {
+     color: var(--primary-color);
+     background-color: var(--secondary-color);
+}
+
+#logo {
+     flex-grow: 1;
+     font-size: 1.8vh;
+     max-width: 23vh;
+}
+
+.label {
+     background-color: var(--primary-color);
+     color: var(--background-color);
+}
+
+.entry_list {
+     border: 0.5vh dashed var(--primary-color);
+     margin-top: 1vh;
+}
+
+.entry {
+     margin-top: 2vh;
+     padding: 5%;
+     font-size: 2vh;
+}
+
+a.url:link {
+     color: var(--primary-color);
+}
+
+.setion_title {
+     color: var(--secondary-color);
+     margin-left: 5vw;
+     margin-top: 5vh;
+     font-size: 2vh;
+}
+
+.section_value {
+     color: var(--text-color);
+     margin-left: 6.5vw;
+     margin-top: 2.5vh;
+     font-size: 2vh;
+     text-align: left;
+}
+
+@keyframes typing {
+     0% {
+          width: 0%;
+     }
+
+     100% {
+          width: 36vh;
+     }
+}
+
+@keyframes blink-caret {
+
+     0%, 100% {
+          border-color: transparent;
+     }
+
+     50% {
+          border-color: var(--secondary-color);
+     }
+}
+
+@keyframes erasing {
+
+     0% {
+          width: 36vh;
+      }
+      100% {
+          width: 0%;
+      }
+}
